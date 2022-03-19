@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Target Testing">
+<test name="Target - Smoke Test">
+    <parameter name="browserName" value="CHROME"/>
+    <parameter name="homePageURL" value="https://www.target.com/"/>
+    <parameter name="productSearch" value="iphone"/>
+    <classes>
+        <class name="main.java.target.tests.HomePageTests"/>
+    </classes>
+</test>
+</suite>
