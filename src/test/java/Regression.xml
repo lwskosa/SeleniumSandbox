@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Testing" parallel="tests" thread-count="6">
+    <suite-files>
+        <suite-file path="Ebay/HomePageRegression.xml"/>
+        <suite-file path="Target/HomePageRegression.xml"/>
+    </suite-files>
+</suite>
