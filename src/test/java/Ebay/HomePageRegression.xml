@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Ebay - Smoke Test">
-<test name="Ebay - Smoke Test">
+<suite name="Ebay">
+<test name="Smoke Test">
     <parameter name="browserName" value="CHROME"/>
     <parameter name="homePageURL" value="https://www.ebay.com/"/>
-    <parameter name="productSearch" value="iphone"/>
     <classes>
-        <class name="main.java.ebay.tests.HomePageTests"/>
+        <class name="main.java.ebay.tests.SearchTests"/>
+        <class name="main.java.ebay.tests.BaseLabelTests"/>
+        <class name="main.java.ebay.tests.BaseNavigationTests"/>
     </classes>
 </test>
 </suite>

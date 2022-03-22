@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Ebay - Spelling Test">
+    <test name="Header Spelling">
+        <parameter name="browserName" value="CHROME"/>
+        <parameter name="homePageURL" value="https://www.ebay.com/"/>
+        <classes>
+            <class name="main.java.ebay.tests.BaseNavigationTests"/>
+        </classes>
+    </test>
+</suite>

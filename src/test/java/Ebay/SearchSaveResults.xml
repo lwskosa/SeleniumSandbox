@@ -6,7 +6,7 @@
     <parameter name="homePageURL" value="https://www.ebay.com/"/>
     <parameter name="productSearch" value="iphone"/>
     <classes>
-        <class name="main.java.ebay.tests.HomePageTests">
+        <class name="main.java.ebay.tests.SearchTests">
             <methods>
                 <include name="searchAndResultsDisplayed"/>
             </methods>

@@ -6,7 +6,7 @@
     <parameter name="homePageURL" value="https://www.target.com/"/>
     <parameter name="productSearch" value="iphone"/>
     <classes>
-        <class name="main.java.target.tests.HomePageTests">
+        <class name="main.java.target.tests.SearchTests">
             <methods>
                 <include name="searchAndResultsDisplayed"/>
             </methods>
