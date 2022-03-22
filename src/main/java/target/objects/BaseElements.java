@@ -2,9 +2,9 @@ package main.java.target.objects;
 
 import org.openqa.selenium.By;
 
-public interface HomePageElements {
+public interface BaseElements {
 
-    By searchField = By.id("search");
+    By searchField  = By.id("search");
     By searchButton = By.xpath("/html/body/div[1]/div[2]/nav/div[2]/form/button");
     By searchButtonWPopup = By.xpath("/html/body/div[2]/div[2]/nav/div[2]/form/button");
     By searchMidBy  = By.xpath("//*[@id=\"pageBodyContainer\"]/div[1]/div/div[4]/div/div[1]/div[2]/div/section/div/div[13]");

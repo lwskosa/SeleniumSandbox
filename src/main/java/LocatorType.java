@@ -1,6 +1,6 @@
 package main.java;
 
-public enum Type {
+public enum LocatorType {
     ID,
     XPATH,
     CSS,
