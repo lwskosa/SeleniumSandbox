@@ -10,7 +10,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 import org.testng.Assert;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
@@ -104,6 +107,16 @@ public class BaseTest {
     public static void scrollToElement(WebElement element){
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
     }
+
+    /**
+     * Scroll to an element specified by Locator
+     * @param withThis Scroll until this element is visible
+     */
+    public static void scrollToElement(By withThis){
+        WebElement element = driver.findElement(withThis);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+    }
+
     /**
      * Implicitly wait specified amount of seconds
      * @param seconds How many seconds we should wait

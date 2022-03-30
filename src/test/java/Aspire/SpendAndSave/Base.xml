@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Aspire Testing">
+<test name="Base">
+    <parameter name="browserName" value="CHROME"/>
+    <parameter name="homePageURL" value="https://www.aspiration.com/"/>
+    <classes>
+        <class name="main.java.aspiration.tests.BaseTests">
+        </class>
+
+    </classes>
+</test>
+</suite>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Aspire Testing">
+<test name="Spend and Save">
+    <parameter name="browserName" value="CHROME"/>
+    <parameter name="homePageURL" value="https://www.aspiration.com/spendandsave"/>
+    <classes>
+        <class name="main.java.aspiration.tests.SpendAndSaveTests">
+<!--            <methods>
+                <include name="verifyAspirePerkLabels"/>
+               &lt;!&ndash; <include name="verifyAspirePerkTexts"/>&ndash;&gt;
+            </methods>-->
+        </class>
+
+    </classes>
+</test>
+</suite>
